@@ -1,0 +1,53 @@
+{
+  "alpha_coarse_analytic": {
+    "freeboard": {
+      "60-70": 0.44993672620742814,
+      "70-80": 0.679982809428576
+    },
+    "posterior": {
+      "60-70": 0.44993672620742814,
+      "70-80": 0.679982809428576
+    }
+  },
+  "alpha_true_band": {
+    "60-70": 0.45,
+    "70-80": 0.68
+  },
+  "files": {
+    "synth_nosigma_grid.nc": "fdc2e3e0b90a2c1ac69ff3e9e83c9772a2a657b55dbf4aeb8c3d536552a75cad",
+    "synth_nosnow_grid.nc": "6356321514a6b1699e0db1a1dd6678a34ed980203e19db7bd7d1dff5226e8d8c",
+    "synth_sigma_grid.nc": "3f26470acf0d1464435688fe701a6ab93f58f055ca2ff3a4d54a0516ecac771e",
+    "synth_white_noise.nc": "26150aec29564498e899bb07896abf494707925a063e7de3de86659a5ebec308"
+  },
+  "generation": {
+    "fine_cell_km": 6.25,
+    "h_correlation_length_km_approx": 88.38834764831844,
+    "h_correlation_sigma_fine_cells": 10.0,
+    "h_sd_coherent_m": 0.36,
+    "h_sd_texture_m": 0.05,
+    "seasonal_amplitude_m": 0.06
+  },
+  "grid": {
+    "cell_km": 25.0,
+    "lat_range": [
+      62.561933931256405,
+      76.64012303719679
+    ],
+    "projection": "spherical azimuthal equidistant, pole-centred",
+    "shape": [
+      60,
+      60
+    ]
+  },
+  "h_field": {
+    "max_m": 2.1,
+    "mean_m": 1.514083295839459,
+    "min_m": 1.0,
+    "sd_m": 0.317674169386775
+  },
+  "note": "alpha_true_band is exact by construction at the 6.25 km generation scale; alpha_coarse_analytic is the same identity applied to the shipped 25 km fields, so tool-vs-coarse differences measure aggregation, not algebra.",
+  "nu_lag1_first_month": 0.018369488488215936,
+  "seed": 20261108,
+  "sigma_declared_m": 0.9,
+  "sigma_freeboard_m": 0.10253164556962024
+}

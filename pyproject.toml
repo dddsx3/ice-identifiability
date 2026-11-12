@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ice-identifiability"
+version = "0.1.0"
+description = "Audit whether a sea-ice thickness product's self-reported uncertainty supports per-cell identifiability claims"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.24", "pandas>=2.0", "netCDF4>=1.6"]
+
+[project.optional-dependencies]
+analysis = ["scipy>=1.11", "matplotlib>=3.7"]
+dev = ["pytest>=7"]
+
+[project.scripts]
+ice-audit = "ice_identifiability.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src_toolkit/src"]
+
+[tool.pytest.ini_options]
+testpaths = ["src_toolkit/tests"]
+pythonpath = ["src_toolkit/src"]
